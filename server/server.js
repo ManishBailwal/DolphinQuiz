@@ -23,7 +23,7 @@ import {
 
 const PORT = Number(process.env.PORT ?? 3000);
 // Only this computer can reach the app unless you set HOST=0.0.0.0.
-const HOST = process.env.HOST ?? '127.0.0.1';
+const HOST = process.env.HOST ?? '0.0.0.0';
 const PUBLIC_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'public');
 
 ensureMediaDirs();
